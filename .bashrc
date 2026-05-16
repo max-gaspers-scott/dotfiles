@@ -8,6 +8,8 @@ source ~/.local/share/omarchy/default/bash/rc
 # Add your own exports, aliases, and functions here.
 #
 function dash() {
+
+    nohup /home/mgs/setup_computer/kanata --cfg /absolute/path/to/kanata.kbd > /dev/null 2>&1 &
     if tmux has-session -t "Work" 2>/dev/null; then
         tmux attach-session -t "Work"
     else
@@ -23,7 +25,7 @@ function dash() {
         tmux send-keys -t "Work" 'nvim work.md' Enter
         
         # 3. Create third window (Logs or Misc)
-        tmux new-window -t "Work" -n "Server"
+        tmux new-window -t "Work" -n "CODE"
 
         # Select the 'Dev' window by default on startup
         tmux select-window -t "Work:2"

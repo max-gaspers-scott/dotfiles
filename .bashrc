@@ -32,9 +32,9 @@ function dash() {
         tmux send-keys -t "Work" 'nvim work.md' Enter
         
         # 3. Create third window (Logs or Misc)
-        # tmux new-window -t "Work" -n "Leniar"
-        # tmux send-keys -t "Work" 'linear-cli issues list --state TODO'
-        #
+        tmux new-window -t "Work" -n "Leniar"
+        tmux send-keys -t "Work" 'linear-cli issues list --state TODO' Enter
+
 
         tmux new-window -t "Work" -n "CODE"
 

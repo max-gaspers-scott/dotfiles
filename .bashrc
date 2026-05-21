@@ -9,7 +9,6 @@ source ~/.local/share/omarchy/default/bash/rc
 #
 function dash() {
 
-    nohup /home/mgs/setup_computer/kanata --cfg /absolute/path/to/kanata.kbd > /dev/null 2>&1 &
     if tmux has-session -t "Work" 2>/dev/null; then
         tmux attach-session -t "Work"
     else
@@ -25,7 +24,9 @@ function dash() {
         # tmux attach-session -t "Work"
         #
         # tmux split-window -h -p 30
-        # tmux send-keys -t "Work" 'cbonsai -li'
+        #
+
+    # tmux send-keys -t "Work" 'cbonsai -li'
         #
         # 2. Create second window (Coding/Development)
         tmux new-window -t "Work" -n "TODO"

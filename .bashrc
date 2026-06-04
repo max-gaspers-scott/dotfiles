@@ -8,6 +8,7 @@ source ~/.local/share/omarchy/default/bash/rc
 # Add your own exports, aliases, and functions here.
 #
 function dash() {
+  set vi -o
 
     if tmux has-session -t "Work" 2>/dev/null; then
         tmux attach-session -t "Work"
@@ -47,3 +48,7 @@ function dash() {
 # Make an alias for invoking commands you use constantly
 # alias p='python'
 . "$HOME/.cargo/env"
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/mgs/.local/bin:$PATH"

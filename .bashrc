@@ -6,9 +6,14 @@
 source ~/.local/share/omarchy/default/bash/rc
 
 # Add your own exports, aliases, and functions here.
-#
+
+# set vi mode always
+set vi -o
+bind 'set show-mode-in-prompt on'
+bind 'set vi-ins-mode-string \1\e[32m\2(ins)\1\e[0m\2_'
+bind 'set vi-cmd-mode-string \1\e[33m\2(cmd)\1\e[0m\2_'
+# setup tmux dashbord/workspace
 function dash() {
-  set vi -o
 
     if tmux has-session -t "Work" 2>/dev/null; then
         tmux attach-session -t "Work"

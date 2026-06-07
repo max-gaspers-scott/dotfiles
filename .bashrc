@@ -8,10 +8,10 @@ source ~/.local/share/omarchy/default/bash/rc
 # Add your own exports, aliases, and functions here.
 
 # set vi mode always
-set vi -o
+set -o vi
 bind 'set show-mode-in-prompt on'
-bind 'set vi-ins-mode-string \1\e[32m\2(ins)\1\e[0m\2_'
-bind 'set vi-cmd-mode-string \1\e[33m\2(cmd)\1\e[0m\2_'
+bind 'set vi-ins-mode-string \1\e[32m\2(ins)\1\e[0m\2 '
+bind 'set vi-cmd-mode-string \1\e[33m\2(cmd)\1\e[0m\2 '
 # setup tmux dashbord/workspace
 function dash() {
 
@@ -49,6 +49,10 @@ function dash() {
         tmux select-window -t "Work:2"
         tmux attach-session -t "Work"
     fi
+}
+
+function spell() {
+  codespell --skip="node_modules, target, build, Cargo.lock, package-lock.json"
 }
 # Make an alias for invoking commands you use constantly
 # alias p='python'

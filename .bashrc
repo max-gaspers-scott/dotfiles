@@ -5,6 +5,9 @@
 # (don't mess with these directly, just overwrite them here!)
 source ~/.local/share/omarchy/default/bash/rc
 
+alias gtree='git log --oneline --graph --decorate --all'
+
+
 # Add your own exports, aliases, and functions here.
 
 # set vi mode always
@@ -23,7 +26,7 @@ function dash() {
         tmux send-keys -t "Work" 'btop' Enter
 
         tmux split-window -v -p 30
-        tmux send-keys -t "Work" 'cd rust-cli-pomodoro' Enter
+        tmux send-keys -t "Work" 'cd pomodoro' Enter
         tmux send-keys -t "Work" 'cargo run' Enter
 
         # tmux select-window -t "Work:1"

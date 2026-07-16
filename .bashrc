@@ -29,6 +29,9 @@ function dash() {
         tmux send-keys -t "Work" 'cd pomodoro' Enter
         tmux send-keys -t "Work" 'cargo run' Enter
 
+        tmux split-window -h
+
+        tmux send-keys -t "Work" 'tty-clock -c -t -s' Enter
         # tmux select-window -t "Work:1"
         # tmux attach-session -t "Work"
         #

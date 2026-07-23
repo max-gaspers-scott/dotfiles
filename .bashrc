@@ -7,7 +7,9 @@ source ~/.local/share/omarchy/default/bash/rc
 
 alias gtree='git log --oneline --graph --decorate --all'
 
-alias db='git switch $(git branch | fzf)'
+alias cb='git switch $(git branch | fzf)'
+
+alias w='nvim $(find -maxdepth 1 -name "*.txt" -o -name "*.md" | fzf)'
 
 # Add your own exports, aliases, and functions here.
 

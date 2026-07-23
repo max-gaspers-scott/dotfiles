@@ -7,6 +7,7 @@ source ~/.local/share/omarchy/default/bash/rc
 
 alias gtree='git log --oneline --graph --decorate --all'
 
+alias db='git switch $(git branch | fzf)'
 
 # Add your own exports, aliases, and functions here.
 

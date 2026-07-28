@@ -29,8 +29,7 @@ function dash() {
         tmux send-keys -t "Work" 'btop' Enter
 
         tmux split-window -v -p 30
-        tmux send-keys -t "Work" 'cd pomodoro' Enter
-        tmux send-keys -t "Work" 'cargo run' Enter
+        tmux send-keys -t "Work" 'intense-pomodoro' Enter
 
         tmux split-window -h
 
@@ -65,7 +64,7 @@ function spell() {
 }
 # Make an alias for invoking commands you use constantly
 # alias p='python'
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"
 
 
 # Added by Antigravity CLI installer

@@ -1,0 +1,21 @@
+[accounts.primary]
+default = true
+email = "max@team-stingray.com"
+display-name = "max gaspers scott"
+
+[accounts.primary.imap]
+server = "box.team-stingray.com"
+
+[accounts.primary.imap.sasl.plain]
+username = "max@team-stingray.com"
+passwd.cmd = "pass show mail/mailinabox"
+
+[accounts.primary.smtp]
+server = "box.team-stingray.com"
+
+[accounts.primary.smtp.sasl.plain]
+username = "max@team-stingray.com"
+passwd.cmd = "pass show mail/mailinabox"
+
+[accounts.primary.mailbox.alias]
+inbox = "INBOX"

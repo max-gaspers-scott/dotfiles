@@ -44,14 +44,19 @@ function dash() {
         #
         # 2. Create second window (Coding/Development)
         tmux new-window -t "Work" -n "TODO"
-        tmux send-keys -t "Work" 'nvim work.md' Enter
+        tmux send-keys -t "Work" 'nvim notes/work.md' Enter
         
         # 3. Create third window (Logs or Misc)
         tmux new-window -t "Work" -n "Leniar"
         tmux send-keys -t "Work" 'linear-cli issues list --state TODO' Enter
 
 
-        tmux new-window -t "Work" -n "CODE"
+        tmux new-window -t "Work" -n "chat"
+        tmux send-keys -t "Work" 'bens-chat-cli' Enter
+
+        tmux new-window -t "Work" -n "email"
+        tmux send-keys -t "Work" 'himalaya envelope list' Enter
+
 
         # Select the 'Dev' window by default on startup
         tmux select-window -t "Work:2"

@@ -81,11 +81,11 @@ function spell() {
 }
 # Make an alias for invoking commands you use constantly
 # alias p='python'
-# . "$HOME/.cargo/env"
-
+# 
 
 # Added by Antigravity CLI installer
 export PATH="/home/mgs/.local/bin:$PATH"
 
 # kilo
 export PATH=/home/mgs/.kilo/bin:$PATH
+. "$HOME/.cargo/env"

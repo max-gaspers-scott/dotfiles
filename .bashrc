@@ -21,6 +21,8 @@ alias cb='git switch $(git branch | fzf)'
 
 alias w='nvim $(find -maxdepth 1 -name "*.txt" -o -name "*.md" | fzf)'
 
+
+
 # Add your own exports, aliases, and functions here.
 
 # set vi mode always
@@ -84,3 +86,6 @@ function spell() {
 
 # Added by Antigravity CLI installer
 export PATH="/home/mgs/.local/bin:$PATH"
+
+# kilo
+export PATH=/home/mgs/.kilo/bin:$PATH

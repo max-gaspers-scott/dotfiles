@@ -1,0 +1,14 @@
+[Unit]
+Description=Kanata keyboard remapper
+Documentation=https://github.com/jtroo/kanata
+After=local-fs.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/mgs/kanata
+ExecStart=/home/mgs/kanata/kanata --cfg /home/mgs/kanata/kanata.kbd
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

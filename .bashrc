@@ -21,6 +21,7 @@ alias cb='git switch $(git branch | fzf)'
 
 alias w='nvim $(find -maxdepth 1 -name "*.txt" -o -name "*.md" | fzf)'
 
+alias cc='clear && cargo clippy'
 
 
 # Add your own exports, aliases, and functions here.

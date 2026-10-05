@@ -23,6 +23,8 @@ alias w='nvim $(find -maxdepth 1 -name "*.txt" -o -name "*.md" | fzf)'
 
 alias cc='clear && cargo clippy'
 
+alias needspace='docker system prune -a && cargo deepclean'
+
 
 # Add your own exports, aliases, and functions here.
 

@@ -25,6 +25,8 @@ alias cc='clear && cargo clippy'
 
 alias needspace='docker system prune -a && cargo deepclean'
 
+alias rust-book='rustup doc --book'
+
 
 # Add your own exports, aliases, and functions here.
 
